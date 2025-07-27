@@ -1,0 +1,35 @@
+{"message": "Logging to file in: /workspace/OpenHands/logs", "severity": "DEBUG", "timestamp": "2025-07-27T20:51:30.097259+00:00"}
+{"message": "Using config class None", "severity": "INFO", "timestamp": "2025-07-27T20:51:31.727741+00:00"}
+{"message": "File upload config: max_size=0MB, restrict_types=False, allowed_extensions=['.*']", "severity": "DEBUG", "timestamp": "2025-07-27T20:51:31.761214+00:00"}
+{"message": "Logging to file in: /workspace/OpenHands/logs", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:20.820496+00:00"}
+{"message": "Using config class None", "severity": "INFO", "timestamp": "2025-07-27T20:52:22.426316+00:00"}
+{"message": "File upload config: max_size=0MB, restrict_types=False, allowed_extensions=['.*']", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:22.453586+00:00"}
+{"message": "Checking dependencies: Jupyter", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:22.549789+00:00"}
+{"message": "Jupyter output: Selected Jupyter core packages...\nIPython          : 9.3.0\nipykernel        : 6.29.5\nipywidgets       : 8.1.7\njupyter_client   : 8.6.3\njupyter_core     : 5.8.1\njupyter_server   : 2.16.0\njupyterlab       : 4.4.3\nnbclient         : 0.10.2\nnbconvert        : 7.16.6\nnbformat         : 5.10.4\nnotebook         : 7.4.3\nqtconsole        : 5.6.1\ntraitlets        : 5.14.3\n", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:23.971924+00:00"}
+{"message": "Checking dependencies: libtmux", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:23.972349+00:00"}
+{"message": "Checking dependencies: browser", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:24.030251+00:00"}
+{"message": "Starting browser env...", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:24.039764+00:00"}
+{"message": "Logging to file in: /workspace/OpenHands/logs", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:25.706376+00:00"}
+{"message": "Successfully called env.reset", "severity": "INFO", "timestamp": "2025-07-27T20:52:29.284614+00:00"}
+{"message": "Browser env started.", "severity": "INFO", "timestamp": "2025-07-27T20:52:29.285103+00:00"}
+{"message": "_register_signal_handlers", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:29.286301+00:00"}
+{"message": "_register_signal_handlers:main_thread", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:29.286654+00:00"}
+{"message": "SHUTDOWN recv, shutting down browser env...", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:29.287340+00:00"}
+{"message": "_register_signal_handlers", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:30.104235+00:00"}
+{"message": "_register_signal_handlers:main_thread", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:30.104664+00:00"}
+{"message": "Logging to file in: /workspace/OpenHands/logs", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:30.416022+00:00"}
+{"message": "Using config class None", "severity": "INFO", "timestamp": "2025-07-27T20:52:31.866193+00:00"}
+{"message": "File upload config: max_size=0MB, restrict_types=False, allowed_extensions=['.*']", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:31.887072+00:00"}
+{"message": "Checking dependencies: Jupyter", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:31.973045+00:00"}
+{"message": "Jupyter output: Selected Jupyter core packages...\nIPython          : 9.3.0\nipykernel        : 6.29.5\nipywidgets       : 8.1.7\njupyter_client   : 8.6.3\njupyter_core     : 5.8.1\njupyter_server   : 2.16.0\njupyterlab       : 4.4.3\nnbclient         : 0.10.2\nnbconvert        : 7.16.6\nnbformat         : 5.10.4\nnotebook         : 7.4.3\nqtconsole        : 5.6.1\ntraitlets        : 5.14.3\n", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:32.927275+00:00"}
+{"message": "Checking dependencies: libtmux", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:32.927680+00:00"}
+{"message": "Checking dependencies: browser", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:32.976089+00:00"}
+{"message": "Starting browser env...", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:32.979818+00:00"}
+{"message": "Logging to file in: /workspace/OpenHands/logs", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:34.624692+00:00"}
+{"message": "Successfully called env.reset", "severity": "INFO", "timestamp": "2025-07-27T20:52:38.106230+00:00"}
+{"message": "Browser env started.", "severity": "INFO", "timestamp": "2025-07-27T20:52:38.106668+00:00"}
+{"message": "_register_signal_handlers", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:38.106949+00:00"}
+{"message": "_register_signal_handlers:main_thread", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:38.107193+00:00"}
+{"message": "SHUTDOWN recv, shutting down browser env...", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:38.107798+00:00"}
+{"message": "_register_signal_handlers", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:38.824595+00:00"}
+{"message": "_register_signal_handlers:main_thread", "severity": "DEBUG", "timestamp": "2025-07-27T20:52:38.825022+00:00"}

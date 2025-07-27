@@ -1,0 +1,1 @@
+import{u as o}from"./react-redux-BK5-gECc.js";import{R as r}from"./agent-state-B-zEstf9.js";import{u as a}from"./use-active-conversation-BkcNKr5c.js";const i=()=>{const{data:t}=a(),{curAgentState:e}=o(s=>s.agent);return t?.status==="RUNNING"&&!r.includes(e)};export{i as u};
