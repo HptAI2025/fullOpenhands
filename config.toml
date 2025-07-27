@@ -1,0 +1,19 @@
+[core]
+workspace_base = "/workspace"
+persist_sandbox = false
+run_as_openhands = false
+sandbox_type = "local"
+
+[llm]
+model = "gpt-4o"
+api_key = "sk-sample-openai-key-for-testing"
+
+[agent]
+name = "CodeActAgent"
+
+[security]
+security_analyzer = ""
+confirmation_mode = false
+
+[server]
+disable_auth = true

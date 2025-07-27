@@ -11,7 +11,8 @@
 ### 2.1. Clone repository
 
 ```bash
-git clone https://github.com/All-Hands-AI/OpenHands.git
+git clone https://github.com/HptAI2025/fullOpenhands.git
+cd fullOpenhands
 ```
 
 ### 2.2. Tạo file .env
@@ -36,9 +37,13 @@ DEBUG=1
 
 # Server Configuration
 BACKEND_HOST=0.0.0.0
-BACKEND_PORT=3000
+BACKEND_PORT=12000
 FRONTEND_HOST=0.0.0.0
-FRONTEND_PORT=3001
+FRONTEND_PORT=12001
+
+# Authentication Configuration
+DISABLE_AUTH=true
+ENABLE_SECURITY=false
 ```
 
 ### 2.3. Build và chạy Docker container
@@ -51,8 +56,8 @@ docker-compose up -d
 
 ### 3.1. Truy cập OpenHands
 
-- Backend API: http://localhost:3000
-- Frontend UI: http://localhost:3001
+- OpenHands UI: http://localhost:12000
+- Backend API: http://localhost:12000/api
 
 ### 3.2. Kiểm tra logs
 
@@ -97,7 +102,7 @@ Nếu bạn gặp lỗi khi chạy Docker, hãy kiểm tra:
 
 - Docker và Docker Compose đã được cài đặt đúng cách
 - Bạn có quyền chạy Docker (thêm user vào nhóm docker)
-- Cổng 3000 và 3001 không bị sử dụng bởi ứng dụng khác
+- Cổng 12000 và 12001 không bị sử dụng bởi ứng dụng khác
 
 ### 6.2. Lỗi API key
 
@@ -113,3 +118,29 @@ Nếu bạn gặp lỗi khi chạy test, hãy kiểm tra:
 - Dependencies đã được cài đặt đầy đủ
 - Phiên bản Python là 3.12
 - API key đã được cấu hình đúng
+
+## 7. Trạng thái test
+
+✅ **ĐÃ TEST THÀNH CÔNG TRÊN SANDBOX!**
+
+### Các tính năng đã test:
+- ✅ Giao diện web hoàn chỉnh
+- ✅ Tạo conversation mới
+- ✅ Chat interface
+- ✅ VS Code integration
+- ✅ Terminal tích hợp
+- ✅ Jupyter notebook
+- ✅ Browser tích hợp
+- ✅ Suggested tasks
+- ✅ Authentication đã được disable cho development
+
+### Demo link:
+🌐 **https://work-1-bennmeioiqjxyohd.prod-runtime.all-hands.dev**
+
+### Repository GitHub:
+📁 **https://github.com/HptAI2025/fullOpenhands.git**
+
+### Lưu ý quan trọng:
+- Đã fix lỗi 401 Unauthorized bằng cách unset SESSION_API_KEY
+- Server chạy trên port 12000 thay vì 3000/3001
+- Authentication đã được disable để dễ dàng development

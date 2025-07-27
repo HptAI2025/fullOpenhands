@@ -2,7 +2,7 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# Cài đặt các dependencies cần thiết
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -12,27 +12,31 @@ RUN apt-get update && apt-get install -y \
     npm \
     && rm -rf /var/lib/apt/lists/*
 
-# Cài đặt Poetry
+# Install Poetry
 RUN pip install poetry
 
-# Clone repository
-RUN git clone https://github.com/All-Hands-AI/OpenHands.git .
+# Copy project files
+COPY . .
 
-# Cài đặt dependencies mà không cài đặt project
+# Configure poetry and install dependencies
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi
 
 # Build frontend
 RUN cd frontend && npm install && npm run build
 
-# Thiết lập biến môi trường
+# Create necessary directories
+RUN mkdir -p /app/workspace /app/.openhands
+
+# Set environment variables
 ENV PYTHONPATH=/app
 ENV DEBUG=1
 ENV RUNTIME=local
+ENV OPENHANDS_WORKSPACE_BASE=/app/workspace
+ENV OPENHANDS_CONFIG_DIR=/app/.openhands
 
-# Mở cổng
-EXPOSE 3000
-EXPOSE 3001
+# Expose port
+EXPOSE 12000
 
-# Lệnh mặc định khi chạy container
-CMD ["uvicorn", "openhands.server.listen:app", "--host", "0.0.0.0", "--port", "3000"]
+# Start command (without SESSION_API_KEY to disable auth)
+CMD ["poetry", "run", "uvicorn", "openhands.server.listen:app", "--host", "0.0.0.0", "--port", "12000"]
